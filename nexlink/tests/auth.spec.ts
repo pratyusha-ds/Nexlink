@@ -5,7 +5,7 @@ test.describe("Authentication Flow", () => {
     await page.goto("/");
   });
 
-  test("should show auth buttons in the header when logged out", async ({
+  test("should show auth buttons in the header when user is logged out", async ({
     page,
   }) => {
     const signInBtn = page.getByRole("button", { name: /sign in/i });
